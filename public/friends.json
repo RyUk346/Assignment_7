@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arafat.hossain@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied CSE together at AIUB. Used to work on group projects and late-night coding sessions.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["office", "designer"],
+    "bio": "Worked together on a frontend project. She helped a lot with UI/UX and Figma designs.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+    "email": "tanvir.ahmed@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["football", "neighbour"],
+    "bio": "We play football together every weekend in the local মাঠ. Great striker and very competitive.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 4,
+    "name": "Farzana Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "farzana.rahman@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["school", "old friend"],
+    "bio": "We have been friends since school days. Used to prepare for exams together and share notes.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 5,
+    "name": "Siam Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+    "email": "siam.hasan@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["gaming", "online friend"],
+    "bio": "Met while playing Valorant. We still play ranked matches and discuss game strategies regularly.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Mithila Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+    "email": "mithila.chowdhury@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["family friend", "travel"],
+    "bio": "Family friend who loves traveling. We often plan trips and share travel experiences.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 7,
+    "name": "Rakibul Islam",
+    "picture": "https://randomuser.me/api/portraits/men/55.jpg",
+    "email": "rakibul.islam@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["colleague", "backend"],
+    "bio": "Worked together on a Node.js backend system. Very skilled in APIs and database design.",
+    "goal": 14,
+    "next_due_date": "2026-04-08"
+  },
+  {
+    "id": 8,
+    "name": "Tania Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "tania.sultana@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["university", "study partner"],
+    "bio": "We used to prepare for exams together. She is very organized and always motivated me to study.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  }
+]
