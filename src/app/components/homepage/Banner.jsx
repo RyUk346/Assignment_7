@@ -2,7 +2,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 
 const Banner = () => {
   return (
-    <div className="py-20 bg-[#F8FAFC] min-h-screen">
+    <div className="">
       <div className="text-center">
         <div className=" flex flex-col items-center justify-center">
           <h1 className="text-5xl font-bold">

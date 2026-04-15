@@ -17,16 +17,10 @@ const FriendsSection = async ({ from }) => {
   const friends = await friendPromise();
 
   return (
-    <div className="container mx-auto my-[60px]">
+    <div className="container mx-auto  pt-10">
       {/* Section header */}
-      <div className="mb-8 text-center">
-        <h2 className="font-bold text-4xl">
-          {from === "homepage" ? "Trending apps" : "All Apps"}
-        </h2>
-        <p className="text-gray-600">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          reiciendis eos laborum tempore quis hic quod cupiditate, consequuntur
-        </p>
+      <div className="mb-8">
+        <h2 className="font-semibold text-2xl">Your Friends</h2>
       </div>
       {/* {loading ? (
         <div className="flex justify-center items-center"> */}
@@ -34,18 +28,12 @@ const FriendsSection = async ({ from }) => {
       {/* Loading......
         </div>
       ) : ( */}
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {friends.map((friend, ind) => {
           return <FriendCard friend={friend} key={ind} />;
         })}
       </div>
       {/* )} */}
-
-      <div className="text-center mt-4">
-        <Link href={"/friends"}>
-          <button className="btn bg-purple-500 text-white">View All</button>
-        </Link>
-      </div>
     </div>
   );
 };

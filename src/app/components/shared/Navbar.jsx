@@ -39,13 +39,15 @@ const Navbar = () => {
           Keen<span className="text-[#244D3F] font-semibold">Keeper</span>
         </h2>
 
-        <ul className="flex justify-between items-center">
+        <ul className="flex justify-between items-center  ">
           {navItems.map((item, index) => (
             // Client component
             <MyLink key={index} href={item.path}>
               <div className="flex justify-center items-center gap-2 px-4 py-3">
                 <span className="text-2xl">{item.icon}</span>
-                <span className="text-[16px] font-semibold">{item.text}</span>
+                <span className="text-[16px] font-semibold hidden sm:flex">
+                  {item.text}
+                </span>
               </div>
             </MyLink>
           ))}
