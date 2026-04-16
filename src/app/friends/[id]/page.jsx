@@ -13,7 +13,7 @@ import {
 } from "react-icons/pi";
 import { FaRegTrashAlt } from "react-icons/fa";
 const friendPromise = async function () {
-  const res = await fetch("http://localhost:3000/friends.json", {
+  const res = await fetch("https://assignment-7-ph.vercel.app/friends.json", {
     cache: "no-store",
   });
   const data = await res.json();
