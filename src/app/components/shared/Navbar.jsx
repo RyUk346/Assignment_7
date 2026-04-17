@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav className=" shadow border-b border-[#E9E9E9]">
-      <div className="flex justify-between gap-4 items-center py-4 container mx-auto">
+      <div className="flex justify-between gap-4 items-center py-4 container mx-auto px-2">
         {/* <Image
           src={logoImg}
           alt="PH play store logo"

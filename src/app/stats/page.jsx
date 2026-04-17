@@ -26,7 +26,7 @@ const Stats = () => {
 
   return (
     <div className="bg-[#F8FAFC]">
-      <div className="container mx-auto py-10 md:py-20">
+      <div className="container mx-auto py-10 md:py-20 px-4">
         <h2 className="text-[#1F2937] font-bold text-5xl">
           Friendship Analytics
         </h2>

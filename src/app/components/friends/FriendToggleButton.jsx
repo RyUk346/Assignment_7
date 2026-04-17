@@ -13,7 +13,7 @@ const FriendToggleButton = ({ friend }) => {
     addToTimeline(type, friend);
 
     toast.success(
-      `${type.charAt(0).toUpperCase() + type.slice(1)} with ${friend.name} added to timeline!`,
+      `${type.charAt(0).toUpperCase() + type.slice(1)} with ${friend.name}`,
     );
   };
 

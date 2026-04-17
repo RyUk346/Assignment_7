@@ -12,7 +12,7 @@ import {
   PiVideoCamera,
 } from "react-icons/pi";
 import { FaRegTrashAlt } from "react-icons/fa";
-import FriendToggleButton from "@/app/components/friends/InstallToggleButton";
+import FriendToggleButton from "@/app/components/friends/FriendToggleButton";
 const friendPromise = async function () {
   const res = await fetch("https://assignment-7-ph.vercel.app/friends.json", {
     cache: "no-store",
@@ -75,7 +75,13 @@ const friendDetailsPage = async ({ params }) => {
               </figure>
               <div className="card-body items-center px-6 text-center">
                 <h2 className="card-title text-[20px]">{friend.name}</h2>
-
+                <div>
+                  <p
+                    className={`text-white font-medium p-2 rounded-full px-4 capitalize ${friend.status === "overdue" ? "bg-[#EF4444]" : friend.status === "On-Track" ? "bg-[#244D3F]" : friend.status === "Almost Due" ? "bg-[#EFAD44]" : ""}`}
+                  >
+                    {friend.status}
+                  </p>
+                </div>
                 <div className="flex gap-2 flex-wrap justify-center">
                   {friend.tags.map((tag, ind) => {
                     return (
@@ -89,13 +95,7 @@ const friendDetailsPage = async ({ params }) => {
                     );
                   })}
                 </div>
-                <div>
-                  <p
-                    className={`text-white font-medium p-2 rounded-full px-4 capitalize ${friend.status === "overdue" ? "bg-[#EF4444]" : friend.status === "On-Track" ? "bg-[#244D3F]" : friend.status === "Almost Due" ? "bg-[#EFAD44]" : ""}`}
-                  >
-                    {friend.status}
-                  </p>
-                </div>
+
                 <p className="text-[#64748B] font-medium italic ">
                   {friend.bio}
                 </p>
@@ -119,24 +119,30 @@ const friendDetailsPage = async ({ params }) => {
           </div>
 
           <div className="space-y-6">
-            <div className="grid grid-cols-3 gap-6">
-              <div className="text-center bg-white border border-white rounded-lg shadow-lg py-8 px-4 space-y-2">
-                <h1 className="text-[#244D3F] font-semibold text-3xl">
+            <div className="grid grid-cols-3 gap-2 md:gap-6">
+              <div className="text-center bg-white border border-white rounded-lg shadow-lg py-4 md:py-8 px-4 space-y-2">
+                <h1 className="text-[#244D3F] font-medium md:font-semibold text-xl md:text-3xl">
                   {friend.days_since_contact}
                 </h1>
-                <p className="text-[#64748B]">Days Since Contact</p>
+                <p className="text-[#64748B] text-sm md:text-[16px]">
+                  Days Since Contact
+                </p>
               </div>
-              <div className="text-center bg-white border border-white rounded-lg shadow-lg py-8 px-4 space-y-2">
-                <h1 className="text-[#244D3F] font-semibold text-3xl">
+              <div className="text-center bg-white border border-white rounded-lg shadow-lg py-4 md:py-8 px-4 space-y-2">
+                <h1 className="text-[#244D3F] font-medium md:font-semibold text-xl md:text-3xl">
                   {friend.goal}
                 </h1>
-                <p className="text-[#64748B]">Goal (Days)</p>
+                <p className="text-[#64748B] text-sm md:text-[16px]">
+                  Goal (Days)
+                </p>
               </div>
-              <div className="text-center bg-white border border-white rounded-lg shadow-lg py-8 px-4 space-y-2">
-                <h1 className="text-[#244D3F] font-semibold text-3xl">
+              <div className="text-center bg-white border border-white rounded-lg shadow-lg py-4 md:py-8 px-4 space-y-2">
+                <h1 className="text-[#244D3F] font-medium lg:font-semibold text-xl md:text-3xl">
                   {friend.next_due_date}
                 </h1>
-                <p className="text-[#64748B]">Next Due</p>
+                <p className="text-[#64748B] text-sm md:text-[16px]">
+                  Next Due
+                </p>
               </div>
             </div>
             <div className="bg-white border border-white rounded-lg shadow-lg p-6">
