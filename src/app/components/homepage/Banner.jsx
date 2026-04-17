@@ -30,7 +30,7 @@ const Banner = () => {
                 <p className="text-lg text-[#64748B]">Need Attention</p>
               </div>
               <div className="p-8 flex flex-col gap-2 text-center bg-white border border-white shadow-sm rounded-lg">
-                <h2 className="text-[32px] font-semibold text-[#244D3F]">10</h2>
+                <h2 className="text-[32px] font-semibold text-[#244D3F]">8</h2>
                 <p className="text-lg text-[#64748B]">
                   Interactions This Month
                 </p>
