@@ -12,6 +12,7 @@ import {
   PiVideoCamera,
 } from "react-icons/pi";
 import { FaRegTrashAlt } from "react-icons/fa";
+import FriendToggleButton from "@/app/components/friends/InstallToggleButton";
 const friendPromise = async function () {
   const res = await fetch("https://assignment-7-ph.vercel.app/friends.json", {
     cache: "no-store",
@@ -27,12 +28,12 @@ export async function generateMetadata({ params }) {
 
   if (!friend) {
     return {
-      title: `Not found - PH play store`,
+      title: `Not found - Keen Keeper`,
     };
   }
 
   return {
-    title: `${friend.name} - PH play store`,
+    title: `${friend.name} - Keen Keeper`,
     description: friend.description,
   };
 }
@@ -156,19 +157,8 @@ const friendDetailsPage = async ({ params }) => {
               <h2 className="text-[#244D3F] font-medium text-xl">
                 Quick Check-In
               </h2>
-              <div className="grid grid-cols-3 gap-4">
-                <button className="btn flex flex-col p-4 h-24">
-                  <FiPhoneCall className="text-3xl" />
-                  <h2 className="text-lg text-[#1F2937]">Call</h2>
-                </button>
-                <button className="btn flex flex-col p-4 h-24">
-                  <PiChatDotsBold className="text-3xl" />
-                  <h2 className="text-lg text-[#1F2937]">Text</h2>
-                </button>
-                <button className="btn flex flex-col p-4 h-24">
-                  <PiVideoCamera className="text-3xl" />
-                  <h2 className="text-lg text-[#1F2937]">Call</h2>
-                </button>
+              <div className="">
+                <FriendToggleButton friend={friend} />
               </div>
             </div>
           </div>
